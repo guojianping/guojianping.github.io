@@ -1,0 +1,454 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo下的jacman主题添加网易云跟帖评论 | 郭建平的个人博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="GuoJianPing">
+    
+
+    
+    <meta name="description" content="前言多说在官网中正式宣布关闭服务的截止日期。
+因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。
+jacman主题下本身配置了多说、Disqus;但是随着Disqus被墙,多说也将要关闭,让我们不得不考虑其他的评论系统了。这里介绍一下我朝大">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo下的jacman主题添加网易云跟帖评论">
+<meta property="og:url" content="http://guojianping.github.io/2017/03/24/Hexo下的jacman主题添加网易云跟帖评论/index.html">
+<meta property="og:site_name" content="郭建平的个人博客">
+<meta property="og:description" content="前言多说在官网中正式宣布关闭服务的截止日期。
+因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。
+jacman主题下本身配置了多说、Disqus;但是随着Disqus被墙,多说也将要关闭,让我们不得不考虑其他的评论系统了。这里介绍一下我朝大">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1391995-dbd3af65bc13f0be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1391995-f8cceddca1d1a069.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1391995-258eeb4edeaf7148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1391995-7618f5989b9b06a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1391995-af1761553d446b0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1391995-9f69be0088491cfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-30T07:17:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo下的jacman主题添加网易云跟帖评论">
+<meta name="twitter:description" content="前言多说在官网中正式宣布关闭服务的截止日期。
+因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。
+jacman主题下本身配置了多说、Disqus;但是随着Disqus被墙,多说也将要关闭,让我们不得不考虑其他的评论系统了。这里介绍一下我朝大">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1391995-dbd3af65bc13f0be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+    
+    <link rel="alternative" href="/atom.xml" title="郭建平的个人博客" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="郭建平的个人博客" title="郭建平的个人博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="郭建平的个人博客">郭建平的个人博客</a></h1>
+				<h2 class="blog-motto">爱编码，爱学习，爱生活!</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:guojianping.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/03/24/Hexo下的jacman主题添加网易云跟帖评论/" title="Hexo下的jacman主题添加网易云跟帖评论" itemprop="url">Hexo下的jacman主题添加网易云跟帖评论</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="GuoJianPing" target="_blank" itemprop="author">GuoJianPing</a>
+		
+  <p class="article-time">
+    <time datetime="2017-03-24T02:20:43.000Z" itemprop="datePublished"> 发表于 2017-03-24</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1、注册网易云跟帖账号"><span class="toc-text">1、注册网易云跟帖账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、登陆云跟帖后台配置站点信息"><span class="toc-text">2、登陆云跟帖后台配置站点信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、获取云跟贴通用代码"><span class="toc-text">3、获取云跟贴通用代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、主题下的配置文件修改"><span class="toc-text">4、主题下的配置文件修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、添加通用代码"><span class="toc-text">5、添加通用代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、评论迁移"><span class="toc-text">6、评论迁移</span></a></li></ol>
+		
+		</div>
+		
+		<p></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多说在官网中正式宣布关闭服务的截止日期。</p><p></p>
+<p><blockquote><p>因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。</p></blockquote></p>
+<p>jacman主题下本身配置了多说、Disqus;但是随着Disqus被墙,多说也将要关闭,让我们不得不考虑其他的评论系统了。</p><p>这里介绍一下我朝大网易的云跟帖如何加到Hexo博客吧。</p>
+
+<p></p><h2 id="1、注册网易云跟帖账号"><a href="#1、注册网易云跟帖账号" class="headerlink" title="1、注册网易云跟帖账号"></a>1、注册网易云跟帖账号</h2><p>登陆<a href="https://gentie.163.com" target="_blank" rel="external">网易云跟帖官网</a>，在页面右上角点击<strong>注册</strong>按钮进行注册。</p><p></p>
+<p></p><h2 id="2、登陆云跟帖后台配置站点信息"><a href="#2、登陆云跟帖后台配置站点信息" class="headerlink" title="2、登陆云跟帖后台配置站点信息"></a>2、登陆云跟帖后台配置站点信息</h2><p>登陆云跟帖后配置站点信息，若你的站点网址没有被百度收录的话，会出现<font color="red">域名未被收录</font>的提示。</p><p>此时你就需要联系云跟帖的后台小伙伴了，将你的域名信息向他们反映下，他们就会把你的域名添加进去的。</p><p>若你的站点域名已经被收录了的话就直接配置好站点信息就OK了。</p><p>(PS：如果在配置站点信息的时候提示<font color="red"> 站点名称或站点URL已经存在 </font>，那是因为云跟贴暂不支持二级域名，如果你的不是二级域名，可以把url地址发给云跟帖技术人员看一下)</p><p></p>
+<p></p><h2 id="3、获取云跟贴通用代码"><a href="#3、获取云跟贴通用代码" class="headerlink" title="3、获取云跟贴通用代码"></a>3、获取云跟贴通用代码</h2><p>进到后台管理-&gt;获取代码-&gt;通用代码。</p><img src="http://upload-images.jianshu.io/upload_images/1391995-dbd3af65bc13f0be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><p></p>
+<p></p><h2 id="4、主题下的配置文件修改"><a href="#4、主题下的配置文件修改" class="headerlink" title="4、主题下的配置文件修改"></a>4、主题下的配置文件修改</h2><p>修改jacman文件夹的配置文件config.yml，找到Comment选项，添加如下代码。</p><p>(PS：yungentie_shortname后面的内容可以随便填写，但不能为空，我写的是我博客的名称)</p><img src="http://upload-images.jianshu.io/upload_images/1391995-f8cceddca1d1a069.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><p></p>
+<p></p><h2 id="5、添加通用代码"><a href="#5、添加通用代码" class="headerlink" title="5、添加通用代码"></a>5、添加通用代码</h2><p>在如下位置<img src="http://upload-images.jianshu.io/upload_images/1391995-258eeb4edeaf7148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p></p>
+<p></p>添加如下代码<img src="http://upload-images.jianshu.io/upload_images/1391995-7618f5989b9b06a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><p></p><p></p>
+<p>重新<u><font color="red"> hexo clean &amp;&amp; hexo g </font></u>你会看到网易跟帖的评论框。</p><p>(PS：有的可能在线预览看不到效果,要上传到GitHub才会有效果)</p>
+
+<p></p><h2 id="6、评论迁移"><a href="#6、评论迁移" class="headerlink" title="6、评论迁移"></a>6、评论迁移</h2><p>打开<a href="http://duoshuo.com" target="_blank" rel="external">多说首页</a> 进行 登录 -&gt; 右上角 设置 -&gt; 后台管理 -&gt; 工具 -&gt; 导出数据 <img src="http://upload-images.jianshu.io/upload_images/1391995-af1761553d446b0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p></p>
+<p>接下来打开网易云的后台，数据管理 -&gt; 数据导入，将多说导出来的文件上传，刷新便可以看到同步后的评论<img src="http://upload-images.jianshu.io/upload_images/1391995-9f69be0088491cfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://guojianping.github.io/2017/03/24/Hexo下的jacman主题添加网易云跟帖评论/" data-title="Hexo下的jacman主题添加网易云跟帖评论 | 郭建平的个人博客" data-tsina="1895548890" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2017/03/23/iOS-For-GCD/"  title="iOS使用GCD或NSTimer定时刷新按钮的文字，按钮文字闪烁的问题">
+ <strong>下一篇：</strong><br/> 
+ <span>iOS使用GCD或NSTimer定时刷新按钮的文字，按钮文字闪烁的问题
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<!--PC版-->
+<div id="SOHUCS" sid=""></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cyt82TruC',
+conf: 'prod_cb1c6a7513e2c620d17926229dba73e4'
+});
+</script>
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1、注册网易云跟帖账号"><span class="toc-text">1、注册网易云跟帖账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、登陆云跟帖后台配置站点信息"><span class="toc-text">2、登陆云跟帖后台配置站点信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、获取云跟贴通用代码"><span class="toc-text">3、获取云跟贴通用代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、主题下的配置文件修改"><span class="toc-text">4、主题下的配置文件修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、添加通用代码"><span class="toc-text">5、添加通用代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、评论迁移"><span class="toc-text">6、评论迁移</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="guojianping" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+  
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+
+  
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p>  在我电脑上没问题啊！ <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1895548890" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/guojianping" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:scgjp1@163.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="GuoJianPing">GuoJianPing</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261111541'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261111541%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
