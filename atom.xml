@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guojianping.github.io/"/>
-  <updated>2017-03-30T07:17:47.000Z</updated>
+  <updated>2019-09-05T06:46:03.010Z</updated>
   <id>http://guojianping.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://guojianping.github.io/2017/03/24/Hexo%E4%B8%8B%E7%9A%84jacman%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E5%B8%96%E8%AF%84%E8%AE%BA/"/>
     <id>http://guojianping.github.io/2017/03/24/Hexo下的jacman主题添加网易云跟帖评论/</id>
     <published>2017-03-24T02:20:43.000Z</published>
-    <updated>2017-03-30T07:17:47.000Z</updated>
+    <updated>2019-09-05T06:46:03.010Z</updated>
     
     <content type="html"><![CDATA[<p></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多说在官网中正式宣布关闭服务的截止日期。</p><p></p>
 <p><blockquote><p>因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。</p></blockquote></p>
@@ -28,14 +28,14 @@
 
 <p></p><h2 id="1、注册网易云跟帖账号"><a href="#1、注册网易云跟帖账号" class="headerlink" title="1、注册网易云跟帖账号"></a>1、注册网易云跟帖账号</h2><p>登陆<a href="https://gentie.163.com" target="_blank" rel="external">网易云跟帖官网</a>，在页面右上角点击<strong>注册</strong>按钮进行注册。</p><p></p>
 <p></p><h2 id="2、登陆云跟帖后台配置站点信息"><a href="#2、登陆云跟帖后台配置站点信息" class="headerlink" title="2、登陆云跟帖后台配置站点信息"></a>2、登陆云跟帖后台配置站点信息</h2><p>登陆云跟帖后配置站点信息，若你的站点网址没有被百度收录的话，会出现<font color="red">域名未被收录</font>的提示。</p><p>此时你就需要联系云跟帖的后台小伙伴了，将你的域名信息向他们反映下，他们就会把你的域名添加进去的。</p><p>若你的站点域名已经被收录了的话就直接配置好站点信息就OK了。</p><p>(PS：如果在配置站点信息的时候提示<font color="red"> 站点名称或站点URL已经存在 </font>，那是因为云跟贴暂不支持二级域名，如果你的不是二级域名，可以把url地址发给云跟帖技术人员看一下)</p><p></p>
-<p></p><h2 id="3、获取云跟贴通用代码"><a href="#3、获取云跟贴通用代码" class="headerlink" title="3、获取云跟贴通用代码"></a>3、获取云跟贴通用代码</h2><p>进到后台管理-&gt;获取代码-&gt;通用代码。</p><img src="http://upload-images.jianshu.io/upload_images/1391995-dbd3af65bc13f0be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><p></p>
-<p></p><h2 id="4、主题下的配置文件修改"><a href="#4、主题下的配置文件修改" class="headerlink" title="4、主题下的配置文件修改"></a>4、主题下的配置文件修改</h2><p>修改jacman文件夹的配置文件config.yml，找到Comment选项，添加如下代码。</p><p>(PS：yungentie_shortname后面的内容可以随便填写，但不能为空，我写的是我博客的名称)</p><img src="http://upload-images.jianshu.io/upload_images/1391995-f8cceddca1d1a069.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><p></p>
-<p></p><h2 id="5、添加通用代码"><a href="#5、添加通用代码" class="headerlink" title="5、添加通用代码"></a>5、添加通用代码</h2><p>在如下位置<img src="http://upload-images.jianshu.io/upload_images/1391995-258eeb4edeaf7148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p></p>
-<p></p>添加如下代码<img src="http://upload-images.jianshu.io/upload_images/1391995-7618f5989b9b06a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><p></p><p></p>
+<p></p><h2 id="3、获取云跟贴通用代码"><a href="#3、获取云跟贴通用代码" class="headerlink" title="3、获取云跟贴通用代码"></a>3、获取云跟贴通用代码</h2><p>进到后台管理-&gt;获取代码-&gt;通用代码。</p><img src="/.io//gt1.png" alt=""><p></p>
+<p></p><h2 id="4、主题下的配置文件修改"><a href="#4、主题下的配置文件修改" class="headerlink" title="4、主题下的配置文件修改"></a>4、主题下的配置文件修改</h2><p>修改jacman文件夹的配置文件config.yml，找到Comment选项，添加如下代码。</p><p>(PS：yungentie_shortname后面的内容可以随便填写，但不能为空，我写的是我博客的名称)</p><img src="/.io//gt2.png" alt=""><p></p>
+<p></p><h2 id="5、添加通用代码"><a href="#5、添加通用代码" class="headerlink" title="5、添加通用代码"></a>5、添加通用代码</h2><p>在如下位置<img src="/.io//gt3.png" alt=""></p><p></p>
+<p></p>添加如下代码<img src="/.io//gt4.png" alt=""><p></p><p></p>
 <p>重新<u><font color="red"> hexo clean &amp;&amp; hexo g </font></u>你会看到网易跟帖的评论框。</p><p>(PS：有的可能在线预览看不到效果,要上传到GitHub才会有效果)</p>
 
-<p></p><h2 id="6、评论迁移"><a href="#6、评论迁移" class="headerlink" title="6、评论迁移"></a>6、评论迁移</h2><p>打开<a href="http://duoshuo.com" target="_blank" rel="external">多说首页</a> 进行 登录 -&gt; 右上角 设置 -&gt; 后台管理 -&gt; 工具 -&gt; 导出数据 <img src="http://upload-images.jianshu.io/upload_images/1391995-af1761553d446b0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p></p>
-<p>接下来打开网易云的后台，数据管理 -&gt; 数据导入，将多说导出来的文件上传，刷新便可以看到同步后的评论<img src="http://upload-images.jianshu.io/upload_images/1391995-9f69be0088491cfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>]]></content>
+<p></p><h2 id="6、评论迁移"><a href="#6、评论迁移" class="headerlink" title="6、评论迁移"></a>6、评论迁移</h2><p>打开<a href="http://duoshuo.com" target="_blank" rel="external">多说首页</a> 进行 登录 -&gt; 右上角 设置 -&gt; 后台管理 -&gt; 工具 -&gt; 导出数据 <img src="/.io//gt5.png" alt=""></p><p></p>
+<p>接下来打开网易云的后台，数据管理 -&gt; 数据导入，将多说导出来的文件上传，刷新便可以看到同步后的评论<img src="/.io//gt6.png" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -52,12 +52,12 @@
     <link href="http://guojianping.github.io/2017/03/23/iOS-For-GCD/"/>
     <id>http://guojianping.github.io/2017/03/23/iOS-For-GCD/</id>
     <published>2017-03-23T01:09:43.000Z</published>
-    <updated>2019-08-13T08:06:54.531Z</updated>
+    <updated>2019-09-05T06:39:31.167Z</updated>
     
     <content type="html"><![CDATA[<p></p><h2 id="u4E8C_u3001_u83B7_u53D6_u2305"><a href="#u4E8C_u3001_u83B7_u53D6_u2305" class="headerlink" title="问题"></a>问题</h2><br>iOS在使用GCD或NSTimer定时刷新按钮的文字，按钮文字闪烁的问题,附上代码和解决方案!有什么不正确的欢迎留言指正,感谢!  <p></p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">__block <span class="keyword">int</span> timeout = <span class="number">59</span>;<span class="comment">//倒计时时间</span></div><div class="line">    <span class="built_in">dispatch_queue_t</span> queue =dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, <span class="number">0</span>);</div><div class="line">    dispatch_source_t _timer =dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, <span class="number">0</span>, <span class="number">0</span>,queue);</div><div class="line">    dispatch_source_set_timer(_timer,dispatch_walltime(<span class="literal">NULL</span>, <span class="number">0</span>),<span class="number">1.0</span>*<span class="built_in">NSEC_PER_SEC</span>, <span class="number">0</span>); <span class="comment">//每秒执行</span></div><div class="line">    dispatch_source_set_event_handler(_timer, ^&#123;</div><div class="line">        <span class="keyword">if</span>(timeout&lt;=<span class="number">0</span>)&#123; <span class="comment">//倒计时结束，关闭</span></div><div class="line">            dispatch_source_cancel(_timer);</div><div class="line">            <span class="built_in">dispatch_async</span>(dispatch_get_main_queue(), ^&#123;</div><div class="line">                [<span class="keyword">self</span>.getCodeBtn setTitle:<span class="string">@"获取验证码"</span>forState:<span class="built_in">UIControlStateNormal</span>];</div><div class="line">                 [<span class="keyword">self</span>.getCodeBtn setTitleColor:COLOR_5FB9FF forState:<span class="built_in">UIControlStateNormal</span>];</div><div class="line">                <span class="comment">//设置界面的按钮显示根据自己需求设置</span></div><div class="line">                <span class="keyword">self</span>.getCodeBtn.userInteractionEnabled =<span class="literal">YES</span>;</div><div class="line">            &#125;);</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">int</span> seconds = timeout % <span class="number">60</span>;</div><div class="line">            <span class="built_in">NSString</span> *strTime = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%d"</span>, seconds];</div><div class="line">            <span class="built_in">dispatch_async</span>(dispatch_get_main_queue(), ^&#123;</div><div class="line">                <span class="comment">//设置界面的按钮显示根据自己需求设置</span></div><div class="line">                [<span class="built_in">UIView</span> beginAnimations:<span class="literal">nil</span> context:<span class="literal">nil</span>];</div><div class="line">                [<span class="built_in">UIView</span> setAnimationDuration:<span class="number">1</span>];</div><div class="line">                [<span class="keyword">self</span>.getCodeBtn setTitle:[<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%@秒后重新获取"</span>,strTime] forState:<span class="built_in">UIControlStateNormal</span>];</div><div class="line">                [<span class="keyword">self</span>.getCodeBtn setTitleColor:[<span class="built_in">UIColor</span> grayColor] forState:<span class="built_in">UIControlStateNormal</span>];</div><div class="line">                [<span class="built_in">UIView</span> commitAnimations];</div><div class="line">                <span class="keyword">self</span>.getCodeBtn.userInteractionEnabled = <span class="literal">NO</span>;</div><div class="line">            &#125;);</div><div class="line">            timeout--;</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">    dispatch_resume(_timer);</div></pre></td></tr></table></figure>
 <p></p><h2 id="u4E8C_u3001_u83B7_u53D6_u5C5E_u6027"><a href="#u4E8C_u3001_u83B7_u53D6_u5C5E_u6027" class="headerlink" title="解决方案"></a>解决方案</h2>将Button的Type修改为Custom;<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">代码:<span class="built_in">UIButton</span> *button = [<span class="built_in">UIButton</span> buttonWithType:<span class="built_in">UIButtonTypeCustom</span>];</div></pre></td></tr></table></figure><p></p>
-<p>XIB设置如下:<br><img src="http://upload-images.jianshu.io/upload_images/1391995-ba76fdd656eedea1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>XIB设置如下:<br><img src="/.io//gcd.png" alt=""></p>
 ]]></content>
     
     <summary type="html">
